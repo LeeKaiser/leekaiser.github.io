@@ -62,10 +62,19 @@
 			position: relative;
 			font-size: 30px;
 			font-weight: bold;
-			color: rgb(255, 255, 255);
+			color: #ffffff;
 			overflow: hidden;
 			white-space: nowrap;
+			text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+			/*background-color: rgba(0, 0, 0, 0.0);
+			border-radius: 0.75rem;
+			padding: 0.5rem 0.5rem;
+			backdrop-filter: blur(3px);*/
 			animation: typing 3s steps(20, end) infinite;
+		}
+
+		.hero-text {
+			text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 		}
 
 		#typing-animation:before {
@@ -111,6 +120,7 @@
 			transform: scale(1.1);
 		}
 
+		/* course list */
 		.course-list {
 			column-count: 2;        
 			column-gap: 2rem;
@@ -167,10 +177,10 @@
 						<div class="one-forth d-flex  align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Kaiser Lee</span></h1>
+								<span class="subheading hero-text">Hello!</span>
+								<h1 class="mb-4 mt-3 hero-text">I'm <span>Kaiser Lee</span></h1>
 
-								<!-- Element to contain animated typing 
+								<!-- Element to contain animated typing -->
 								<span id="typing-animation"></span>
 
 								<script>
@@ -180,9 +190,10 @@
 
 									// Create an array of typing text
 									const typingTexts = [
-										'Programmer  ',
-										'Designer  ',
-										'Artist   ',
+										'Game Developer!  ',
+										'Software Developer!  ',
+										'Web Developer!   ',
+										'Digital Artist!   ',
 									];
 
 									// Create a function to display the typing animation for a given text
@@ -191,27 +202,29 @@
 										for (let i = 0; i < text.length; i++) {
 											setTimeout(() => {
 												typingAnimationElement.textContent += text[i];
-											}, i * 200); // Increase the delay to slow down the typing animation
+											}, i * 50); // Increase the delay to slow down the typing animation
 										}
 
 										// Once the animation is complete, reset the text and start over
 										setTimeout(() => {
 											typingAnimationElement.textContent = '';
 											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-										}, text.length * 200);
+										}, text.length * 300);
 									}
 
 
 									playTypingAnimation(typingTexts[0]);
 
-								</script>-->
+								</script>
 
 								<br>
 								<br>
 								<p><a href="https://www.linkedin.com/in/kaiser-lee/"
 										class="btn btn-primary py-3 px-4">Linkedin</a>
 									<a href="https://github.com/LeeKaiser"
-										class="btn btn-white btn-outline-white py-3 px-4">Github</a>
+										class="btn btn-primary py-3 px-4">Github</a>
+										<a href="https://cannonsword.itch.io/"
+										class="btn btn-primary py-3 px-4">Itch.io</a>
 								</p>
 							</div>
 						</div>
@@ -371,207 +384,201 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<!--<h1 class="big big-2">Projects</h1>-->
 					<h2 class="mb-4">Projects</h2>
-					<p style="color : #ffffff"> Some of my Projects involving programming and/or other technical
-						experience, which has contributed to building my skills.</p>
+					<p style="color : #ffffff"> Games, simulations, and websites I created through out my journey, <br> including class final projects, 48 hour jam, and capstone.</p>
 					<div class="underline"></div>
 				</div>
-
-
 			</div>
 			<hr>
-			<!-- Row 1 -->
-			<div class="row d-flex justify-content-center">
+			<!-- HSM -->
+			<div class="row mb-5" id = "hero-shooter-maker">
 
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="https://github.com/LeeKaiser/Hero_Shooter_Maker" class="block-20 zoom-effect"
-							style="background-image: url('images/Project_3.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://github.com/LeeKaiser/Hero_Shooter_Maker">
-									Hero Shooter Maker
-								</a>
-							</h3>
-							<!-- href="https://heroshootermaker.wordpress.com/" website detailing work, bring it back when site is finished-->
-							<p>
-								A template for combat focused games. Recreating systems commonly seen in some of my
-								favorite videogames. Includes 9 different major mechanics, such as Characters, Bots,
-								Abilities, Teams, etc.
-							</p>
-						</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="https://github.com/LeeKaiser/Hero_Shooter_Maker" class="block-20 zoom-effect rounded"
+						style="background-image: url('images/Project_3.png');">
+					</a>
+				</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://github.com/LeeKaiser/Hero_Shooter_Maker">
+								Hero Shooter Maker
+							</a>
+						</h3>
+						<!-- href="https://heroshootermaker.wordpress.com/" website detailing work, bring it back when site is finished-->
+						<p>Unity, C# · Personal & Capstone project</p>
+						<p>
+							A template codebase for combat focused games. Recreating systems commonly seen in some of my
+							favorite videogames. Includes 9 different major mechanics, such as Characters, Bots,
+							Abilities, Teams, etc.
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
 					</div>
 				</div>
-
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://www.showmeyourwork.com/" class="block-20 zoom-effect"
-							style="background-image: url('images/project_1.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://www.showmeyourwork.com/">
-									Show Me Your Work!
-								</a>
-							</h3>
-							<p>
-								A Website that teaches students and teachers alike how to create the best portfolio and
-								presentations. Made in Wordpress
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!--
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://leekaiser.github.io/" class="block-20 zoom-effect"
-							style="background-image: url('images/Project_4.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://leekaiser.github.io/">
-									Kaiser Lee Portfolio
-								</a>
-							</h3>
-							<p>
-								A Portfolio showing my technical experience and projects.
-							</p>
-						</div>
-					</div>
-				</div>
-				-->
 			</div>
 
-			<br>
+			<!-- fifty fifty -->
+			<div class="row mb-5" id = "fifty-fifty">
 
-			<!-- Row 2 -->
-			<div class="row d-flex justify-content-center">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://husky-game-dev.itch.io/bitmask-carnival" class="block-20 zoom-effect"
-							style="background-image: url('images/Project_9.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://husky-game-dev.itch.io/bitmask-carnival">
-									Bitmask Carnival
-								</a>
-							</h3>
-							<p>
-								A game for Global Game Jam 2026 made with Husky Game Dev. Solve puzzles where you
-								convert binary number to a different binary number using bitwise operations
-							</p>
-						</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="https://cannonsword.itch.io/fiftyfifty" class="block-20 zoom-effect rounded"
+						style="background-image: url('images/project_11.png');">
+					</a>
+				</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://cannonsword.itch.io/fiftyfifty">
+								Fifty / Fifty
+							</a>
+						</h3>
+						<p>
+							A multiplayer turn based coin flipping game where you can change the toss with playing
+							cards. Created with Eric Im and Leo Kotok for CSS 385 Game Development
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://cannonsword.itch.io/hiver-drive" class="block-20 zoom-effect"
+			<!-- bitmask -->
+			<div class="row mb-5" id = "bitmask-carnival">
+
+				<div class="col-md-4 ftco-animate">
+					<a href="https://husky-game-dev.itch.io/bitmask-carnival" class="block-20 zoom-effect rounded"
+						style="background-image: url('images/Project_9.png');">
+					</a>
+				</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://husky-game-dev.itch.io/bitmask-carnival">
+								Bitmask Carnival
+							</a>
+						</h3>
+						<p>
+							A game for Global Game Jam 2026 made with Husky Game Dev. Solve puzzles where you
+							convert binary number to a different binary number using bitwise operations
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
+					</div>
+				</div>
+			</div>
+
+			<!-- hiver drive -->
+			<div class="row mb-5" id = "hiver-drive">
+
+				<div class="col-md-4 ftco-animate">
+					<a href="https://cannonsword.itch.io/hiver-drive" class="block-20 zoom-effect rounded"
 							style="background-image: url('images/project_10.png');">
 						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://cannonsword.itch.io/hiver-drive">
-									Hiver Drive
-								</a>
-							</h3>
-							<p>
-								A game for UW Tri Campus Game Jam 2026. Drive in a hexagonal world and collect as many
-								points as possible.
-							</p>
-						</div>
-					</div>
 				</div>
-
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://cannonsword.itch.io/fiftyfifty" class="block-20 zoom-effect"
-							style="background-image: url('images/project_11.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://cannonsword.itch.io/fiftyfifty">
-									Fifty / Fifty
-								</a>
-							</h3>
-							<p>
-								A multiplayer turn based coin flipping game where you can change the toss with playing
-								cards. Created with Eric Im and Leo Kotok for CSS 385 Game Development
-							</p>
-						</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://cannonsword.itch.io/hiver-drive">
+								Hiver Drive
+							</a>
+						</h3>
+						<p>
+							A game for UW Tri Campus Game Jam 2026. Drive in a hexagonal world and collect as many
+							points as possible.
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
 					</div>
 				</div>
 			</div>
 
-			<!-- Row 3 -->
-			<div class="row d-flex justify-content-center">
+			<!-- Sci fi Golf -->
+			<div class="row mb-5" id = "Sci-fi-golf">
 
-
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://play.unity.com/en/games/beda7471-d149-4d06-a852-05eac9b3aca0/webgl-builds"
-							class="block-20 zoom-effect" style="background-image: url('images/Project_8.png');">
+				<div class="col-md-4 ftco-animate">
+					<a href="https://play.unity.com/en/games/beda7471-d149-4d06-a852-05eac9b3aca0/webgl-builds"
+							class="block-20 zoom-effect rounded" style="background-image: url('images/Project_8.png');">
 						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a
-									href="https://play.unity.com/en/games/beda7471-d149-4d06-a852-05eac9b3aca0/webgl-builds">
-									Sci Fi Golfing
-								</a>
-							</h3>
-							<p>
-								A Golfing game made to apply computer graphics concept. Created with Alyssa Johnston and
-								Jason Xu for CSS 451 3D Graphics.
-							</p>
-						</div>
+				</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://play.unity.com/en/games/beda7471-d149-4d06-a852-05eac9b3aca0/webgl-builds">
+								Sci Fi Golfing
+							</a>
+						</h3>
+						<p>
+							A Golfing game made to apply computer graphics concept. Created with Alyssa Johnston and
+							Jason Xu for CSS 451 3D Graphics.
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/LeeKaiser/AcetaminophenProject" class="block-20 zoom-effect"
-							style="background-image: url('images/project_7.png');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://github.com/LeeKaiser/AcetaminophenProject">
-									Acetaminophen Metabolism Simulator
-								</a>
-							</h3>
-							<p>
-								System Dynamics model showing the metabolism of Acetaminophen. Created with Vivian
-								Pellock for CSS 458 Computer Simulations
-							</p>
-						</div>
+			<!-- acetaminophen -->
+			<div class="row mb-5" id = "acetaminophen">
+
+				<div class="col-md-4 ftco-animate">
+					<a href="https://github.com/LeeKaiser/AcetaminophenProject" class="block-20 zoom-effect rounded"
+						style="background-image: url('images/project_7.png');">
+					</a>
+				</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://github.com/LeeKaiser/AcetaminophenProject">
+								Acetaminophen Metabolism Simulator
+							</a>
+						</h3>
+						<p>
+							System Dynamics model showing the metabolism of Acetaminophen. Created with Vivian
+							Pellock for CSS 458 Computer Simulations
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
 					</div>
 				</div>
+			</div>
 
-				<!--
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://battlerunes1.wordpress.com/" class="block-20 zoom-effect"
-							style="background-image: url('images/project_5.png');">
+			<!-- show me your work -->
+			<div class="row mb-5" id = "show-me-your-work">
+
+				<div class="col-md-4 ftco-animate">
+					<a href="https://www.showmeyourwork.com/" class="block-20 zoom-effect rounded"
+							style="background-image: url('images/project_1.png');">
 						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">
-								<a href="https://battlerunes1.wordpress.com/">
-									BATTLE RUNES
-								</a>
-							</h3>
-							<p>
-								Battle Royale & Rogue Like hybrid video game concept with emphasis on customizable
-								ability system and teamwork.
-								<br> I have conducted study in character design, video game systems, and world building
-								for BATTLE RUNES.
-								<br> (The website detailing the project is work in progress.)
-							</p>
-						</div>
+				</div>
+				<div class="col-md-8  ftco-animate">
+					<div class="text mt-3 mt-md-0">
+						<h3 class="heading">
+							<a href="https://www.showmeyourwork.com/">
+								Show Me Your Work!
+							</a>
+						</h3>
+						<p>
+							A Website that teaches students and teachers alike how to create the best portfolio and
+							presentations. Made in Wordpress
+						</p>
+						<details>
+							<summary> What I learned and achieved:</summary>
+							<p> lorem ipsum dolor it amet... </p>
+						</details>
 					</div>
 				</div>
-				-->
-
 			</div>
 	</section>
 
@@ -721,7 +728,7 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<!--<h1 class="big big-2">Resume</h1>-->
 					<h2 class="mb-4">Resume</h2>
-					<p style="color : #ffffff">CS & Software Engineering graduate with experience shipping iOS features at Costco and building gameplay and AI systems in Unity. Skilled in C#, C++, Python, and Swift.</p>
+					<p style="color : #ffffff">CS & Software Engineering graduate with experience shipping iOS features at Costco and building websites in Wordpress. Skilled in C#, C++, Python, and Swift.</p>
 					<div class="underline"></div>
 				</div>
 			</div>
@@ -900,7 +907,7 @@
 				</div>
 			</div>
 
-			<div class="row d-flex contact-info mb-5">
+			<div class="row d-flex justify-content-center contact-info mb-5">
 				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
 					<div class="align-self-stretch box p-4 text-center">
 						<div class="icon d-flex align-items-center justify-content-center">
@@ -937,7 +944,7 @@
 						</div>
 						<h3 class="mb-4">Resume</h3>
 						<p><a
-								href="https://docs.google.com/document/d/1Mq4Qwl3BHGkUsdTraC4dSL4voxYpdXt4/edit?usp=sharing&ouid=115699404974733356670&rtpof=true&sd=true">My
+								href="Other_Files/Kaiser Lee Resume general 9_24_26.docx.pdf">My
 								Resume</a></p>
 					</div>
 				</div>
