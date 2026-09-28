@@ -113,6 +113,7 @@
 	</style>
 
 
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -212,7 +213,6 @@
 	<!--ABOUT SECTION-->
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
-			<div class="row">
 				<div class="row d-flex align-items-stretch">
 					<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
@@ -229,10 +229,8 @@
 									<div class="col-sm-6 col-md-7">
 										<div class="about-info">
 											<p><span class="title-s">Name: </span> <span>Kaiser Lee</span></p>
-											<p><span class="title-s">Recent Role: </span> <span>Costco IT
-													Engineer</span></p>
-											<p><span class="title-s">Major: </span> <span> Computer Science & Software
-													Engineer</span></p>
+											<p><span class="title-s">Recent Role: </span> <span>Software Engineer Intern</span></p>
+											<p><span class="title-s">Major: </span> <span> Computer Science & Software Engineering</span></p>
 											<p><span class="title-s">Location: </span> <span>Seattle, WA</span></p>
 										</div>
 									</div>
@@ -240,10 +238,10 @@
 
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Software Engineering, Game
-											development, Agile SDLC, Web developemnt, Digital Art</span></li>
+											development, Agile SDLC, Web development, Digital Art</span></li>
 									<li class="d-flex"><span>Education:</span> <span>University of Washington - Bothell,
 											Bachelor of Science</span></li>
-									<li class="d-flex"><span>Certifications:</span> <span>Azure AI Fundimentals (Issued
+									<li class="d-flex"><span>Certifications:</span> <span>Azure AI Fundamentals (Issued
 											by Microsoft)</span></li>
 									<li class="d-flex"><span>Languages:</span> <span>English, Korean</span></li>
 
@@ -327,7 +325,8 @@
 									for several of my game jam and class projects, including multiplayer card game
 									<strong>Fifty / Fifty</strong> and Global Game Jam puzzle game <strong>Bitmask
 										Carnival</strong>. I am equipped to work across both the technical and creative
-									sides of a team.</p>
+									sides of a team.
+								</p>
 
 								<p>I'm based in Seattle, open to relocation, and looking for roles in gameplay
 									programming or software engineering.</p>
@@ -347,7 +346,7 @@
 						-->
 					</div>
 				</div>
-			</div>
+			
 		</div>
 	</section>
 
@@ -370,7 +369,7 @@
 			<hr>
 			<!-- Row 1 -->
 			<div class="row d-flex justify-content-center">
-				
+
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry">
 						<a href="https://github.com/LeeKaiser/Hero_Shooter_Maker" class="block-20 zoom-effect"
@@ -385,7 +384,8 @@
 							<!-- href="https://heroshootermaker.wordpress.com/" website detailing work, bring it back when site is finished-->
 							<p>
 								A template for combat focused games. Recreating systems commonly seen in some of my
-								favorite videogames. Includes 9 different major mechanics, such as Characters, Bots, Abilities, Teams, etc.
+								favorite videogames. Includes 9 different major mechanics, such as Characters, Bots,
+								Abilities, Teams, etc.
 							</p>
 						</div>
 					</div>
@@ -485,7 +485,7 @@
 								</a>
 							</h3>
 							<p>
-								a multiplayer turn based coin flipping game where you can change the toss with playing
+								A multiplayer turn based coin flipping game where you can change the toss with playing
 								cards. Created with Eric Im and Leo Kotok for CSS 385 Game Development
 							</p>
 						</div>
@@ -495,7 +495,7 @@
 
 			<!-- Row 3 -->
 			<div class="row d-flex justify-content-center">
-				
+
 
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
@@ -562,86 +562,143 @@
 
 			</div>
 	</section>
-<!--
-	<section id="battle-runes" class="mb-5">
-		<h2 class="mb-2">Passion Project: Battle Runes</h2>
-		<p class="text-muted mb-4">
-		  Game concept · In design since 2020 · No playable build yet
-		</p>
-	  
-		<div class="row">
-		  !-- Pitch + status --
-		  <div class="col-lg-5 mb-4">
-			<p>
-			  <strong>Battle Runes</strong> is a hero shooter / battle royale concept with roguelike progression.
-			  [One sentence on the core loop, e.g. "Players pick a hero, then collect runes during each match that
-			  change how their abilities work, so no two runs play the same."]
-			</p>
-			<p>
-			  This is the project that got me into game development. Over the past six years I've written
-			  design documents covering [heroes, the rune system, maps, match flow] and created
-			  [number]+ illustrations for characters and environments.
-			</p>
-			<p>
-			  I'm building it one piece at a time. The combat AI I made for my capstone,
-			  <a href="#hero-shooter-maker">Hero Shooter Maker</a>, is the first system prototyped for it.
-			</p>
-	  
-			<h3 class="h6 mt-4">Progress</h3>
-			<ul class="list-unstyled mb-0">
-			  <li>✔ Core concept &amp; design documents</li>
-			  <li>✔ Character and environment art</li>
-			  <li>✔ Combat AI prototype (Hero Shooter Maker)</li>
-			  <li>○ [Next milestone, e.g. "Rune system prototype"]</li>
-			</ul>
-		  </div>
-	  
-		  !-- Art gallery: keep to your best 4–6 pieces --
-		  <div class="col-lg-7">
+
+	<!-- passion project section
+	<style>
+		#battle-runes>summary {
+			cursor: pointer;
+			list-style: none;
+		}
+
+		#battle-runes>summary::-webkit-details-marker {
+			display: none;
+		}
+
+		#battle-runes>summary:focus-visible {
+			outline: 2px solid #ffffff;
+			outline-offset: -4px;
+		}
+
+		#battle-runes .toggle-label::after {
+			content: "Show more ▾";
+		}
+
+		#battle-runes[open] .toggle-label::after {
+			content: "Show less ▴";
+		}
+	</style>
+
+	<div id="battle-runes" class="mb-5">
+		<details id="battle-runes" class="container">
+			<summary class="row justify-content-center mb-5 pb-5"
+				style="background-image: url(images/background_4.png); background-position: center center; background-size: cover;">
+				!-- background image--
+				<span class="col-md-7 heading-section text-center ftco-animate">
+					!--<h1 class="big big-2">Projects</h1>--
+					<h3> Passion Project:</h3>
+					<h2 class="mb-4"> BATTLE RUNES</h2>
+					<span style="color : #ffffff"> The Project that drives many of my work.
+						<br> Game concept · In design since 2020 · No playable build yet
+					</span>
+				</span>
+				<span class="underline d-block"></span>
+				<span class="toggle-label btn btn-sm btn-outline-light mt-3"></span>
+				</span>
+				</span>
+			</summary>
+
 			<div class="row">
-			  <div class="col-6 col-md-4 mb-3">
-				<img src="images/battle-runes/hero-1.jpg" class="img-fluid rounded"
-					 alt="Concept art of [hero name], a [short description]" loading="lazy">
-			  </div>
-			  <div class="col-6 col-md-4 mb-3">
-				<img src="images/battle-runes/hero-2.jpg" class="img-fluid rounded"
-					 alt="Concept art of [hero name], a [short description]" loading="lazy">
-			  </div>
-			  <div class="col-6 col-md-4 mb-3">
-				<img src="images/battle-runes/hero-3.jpg" class="img-fluid rounded"
-					 alt="Concept art of [hero name], a [short description]" loading="lazy">
-			  </div>
-			  <div class="col-6 col-md-4 mb-3">
-				<img src="images/battle-runes/environment-1.jpg" class="img-fluid rounded"
-					 alt="Environment concept of [location]" loading="lazy">
-			  </div>
-			  <div class="col-6 col-md-4 mb-3">
-				<img src="images/battle-runes/runes.jpg" class="img-fluid rounded"
-					 alt="Rune designs used for [purpose]" loading="lazy">
-			  </div>
-			  <div class="col-6 col-md-4 mb-3">
-				<img src="images/battle-runes/design-doc.jpg" class="img-fluid rounded"
-					 alt="Excerpt from the Battle Runes design document showing [hero kit / system]" loading="lazy">
-			  </div>
+				!-- Pitch + status --
+				<div class="col-lg-5 mb-4">
+					<p>
+						<strong>Battle Runes</strong> is a hero shooter / battle royale concept with roguelike
+						progression.
+						[One sentence on the core loop, e.g. "Players pick a hero, then collect runes during each
+						match that
+						change how their abilities work, so no two runs play the same."]
+					</p>
+					<p>
+						This is the project that got me into game development. Over the past six years I've written
+						design documents covering [heroes, the rune system, maps, match flow] and created
+						[number]+ illustrations for characters and environments.
+					</p>
+					<p>
+						I'm building it one piece at a time. The combat AI I made for my capstone,
+						<a href="#hero-shooter-maker">Hero Shooter Maker</a>, is the first system prototyped for it.
+					</p>
+
+					<h3 class="h6 mt-4">Progress</h3>
+					<ul class="list-unstyled mb-0">
+						<li>✔ Core concept &amp; design documents</li>
+						<li>✔ Character and environment art</li>
+						<li>✔ Combat AI prototype (Hero Shooter Maker)</li>
+						<li>○ [Next milestone, e.g. "Rune system prototype"]</li>
+					</ul>
+				</div>
+
+				!-- Art gallery: keep to your best 4–6 pieces --
+				<div class="col-lg-7">
+					<div class="row">
+						<div class="col-6 col-md-4 mb-3">
+							<img src="images/battle-runes/hero-1.jpg" class="img-fluid rounded"
+								alt="Concept art of [hero name], a [short description]" loading="lazy">
+						</div>
+						<div class="col-6 col-md-4 mb-3">
+							<img src="images/battle-runes/hero-2.jpg" class="img-fluid rounded"
+								alt="Concept art of [hero name], a [short description]" loading="lazy">
+						</div>
+						<div class="col-6 col-md-4 mb-3">
+							<img src="images/battle-runes/hero-3.jpg" class="img-fluid rounded"
+								alt="Concept art of [hero name], a [short description]" loading="lazy">
+						</div>
+						<div class="col-6 col-md-4 mb-3">
+							<img src="images/battle-runes/environment-1.jpg" class="img-fluid rounded"
+								alt="Environment concept of [location]" loading="lazy">
+						</div>
+						<div class="col-6 col-md-4 mb-3">
+							<img src="images/battle-runes/runes.jpg" class="img-fluid rounded"
+								alt="Rune designs used for [purpose]" loading="lazy">
+						</div>
+						<div class="col-6 col-md-4 mb-3">
+							<img src="images/battle-runes/design-doc.jpg" class="img-fluid rounded"
+								alt="Excerpt from the Battle Runes design document showing [hero kit / system]"
+								loading="lazy">
+						</div>
+					</div>
+				</div>
 			</div>
-		  </div>
-		</div>
-	  
-		!-- Optional: one design-doc excerpt, collapsed so it doesn't take over the page --
-		<details class="mt-2">
-		  <summary><strong>Design excerpt: [Hero name]'s kit</strong></summary>
-		  <div class="mt-3">
-			<p><strong>Role:</strong> [e.g. Mobile skirmisher]</p>
-			<ul>
-			  <li><strong>Primary:</strong> [ability + one line on what it does]</li>
-			  <li><strong>Ability 1:</strong> [ability + one line]</li>
-			  <li><strong>Ability 2:</strong> [ability + one line]</li>
-			  <li><strong>Ultimate:</strong> [ability + one line]</li>
-			</ul>
-			<p class="mb-0"><em>Design goal:</em> [why the kit exists, e.g. "reward aggressive players who can pick their fights"]</p>
-		  </div>
+
+			!-- Optional: one design-doc excerpt, collapsed so it doesn't take over the page --
+			<details class="mt-2">
+				<summary><strong>Design excerpt: [Hero name]'s kit</strong></summary>
+				<div class="mt-3">
+					<p><strong>Role:</strong> [e.g. Mobile skirmisher]</p>
+					<ul>
+						<li><strong>Primary:</strong> [ability + one line on what it does]</li>
+						<li><strong>Ability 1:</strong> [ability + one line]</li>
+						<li><strong>Ability 2:</strong> [ability + one line]</li>
+						<li><strong>Ultimate:</strong> [ability + one line]</li>
+					</ul>
+					<p class="mb-0"><em>Design goal:</em> [why the kit exists, e.g. "reward aggressive players who
+						can pick their fights"]</p>
+				</div>
+			</details>
 		</details>
-	  </section>
+
+
+	</div>
+
+	!-- Opens the section automatically when someone clicks a link to it (e.g. from About) --
+	<script>
+		(function () {
+			var br = document.getElementById("battle-runes");
+			if (!br) return;
+			if (location.hash === "#battle-runes") br.open = true;
+			document.querySelectorAll('a[href="#battle-runes"]').forEach(function (a) {
+				a.addEventListener("click", function () { br.open = true; });
+			});
+		})();
+	</script>
 	-->
 
 	<!-- RESUME SECTION-->
@@ -653,9 +710,7 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<!--<h1 class="big big-2">Resume</h1>-->
 					<h2 class="mb-4">Resume</h2>
-					<p style="color : #ffffff">Computer Science and Software Engineer major with experience in iOS and
-						Web development. Skilled in C#, C++, Python, and UI design, contributing to innovative,
-						accessible software solutions in professional, Agile environments.</p>
+					<p style="color : #ffffff">CS & Software Engineering graduate with experience shipping iOS features at Costco and building gameplay and AI systems in Unity. Skilled in C#, C++, Python, and Swift.</p>
 					<div class="underline"></div>
 				</div>
 			</div>
@@ -676,10 +731,12 @@
 						<p class="mt-4">
 						<ul>
 							<li>
-								Contributed to the cake order feature for the Costco iOS app (Swift) in an Agile team of ~30 members.
+								Contributed to the cake order feature for the Costco iOS app (Swift) in an Agile team of
+								~30 members.
 							</li>
 							<li>
-								Delivered 10+ user stories adding Adobe analytics, tracking with Charles Proxy and improving screen reader accessibility, alt text, and UI highlights.
+								Delivered 10+ user stories adding Adobe analytics, tracking with Charles Proxy and
+								improving screen reader accessibility, alt text, and UI highlights.
 							</li>
 							<li>
 								Conducted 10+ code reviews for other team members.
@@ -725,7 +782,8 @@
 								faculty for teaching purposes.
 							</li>
 							<li>
-								Conducted in-depth research on UX design and Wordpress to create website content, optimizing user engagement through visual design and educational resources.
+								Conducted in-depth research on UX design and Wordpress to create website content,
+								optimizing user engagement through visual design and educational resources.
 							</li>
 							<li>
 								Developed custom illustrations (Adobe Illustrator) to enhance the site’s aesthetics for
@@ -739,13 +797,14 @@
 
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">Oct 2018 - May 2022</span>
+						<span class="date">Sep 2018 - May 2022</span>
 						<h2>CAD Designer</h2>
 						<span class="position">Issaquah Robotics Society</span>
 						<p class="mt-4">
 						<ul>
 							<li>Designed and assembled robot modules in Autodesk Inventor and Fusion 360.</li>
-							<li>Worked with a team of 70+ members and won awards, including the Industrial Design and Creativity Awards.</li>
+							<li>Worked with a team of 70+ members and won awards, including the Industrial Design and
+								Creativity Awards.</li>
 							<li>Contributed 3+ hours daily to prototyping and building robots for competitions</li>
 						</ul>
 						</p>
@@ -764,7 +823,7 @@
 			<br>
 
 			<div class="row">
-				<div class="col-md-6">
+				<!--<div class="col-md-6">-->
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2022-2026</span>
 						<h2>BS in Computer Science and Software Engineering</h2>
@@ -772,8 +831,8 @@
 						<span class="position">University of Washington - Bothell</span>
 						<p class="mt-4">GPA: 3.74/4.0</p>
 					</div>
-				</div>
-
+				<!--</div>-->
+				<!--
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">2018-2022</span>
@@ -782,6 +841,7 @@
 						<p class="mt-4">GPA: 3.7/4.0</p>
 					</div>
 				</div>
+				-->
 			</div>
 			<!--
 			<div class="row justify-content-center mt-5">
@@ -806,7 +866,7 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<!--<h1 class="big big-2">Contact</h1>-->
 					<h2 class="mb-4">Contact Info</h2>
-					<p style="color : #ffffff"> Please feel free to contact me! <br> My most prefered contact method is
+					<p style="color : #ffffff"> Please feel free to contact me! <br> My most preferred contact method is
 						through email.</p>
 					<div class="underline"></div>
 				</div>
