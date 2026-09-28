@@ -110,6 +110,18 @@
 		.zoom-effect:hover {
 			transform: scale(1.1);
 		}
+
+		.course-list {
+			column-count: 2;        
+			column-gap: 2rem;
+		}
+		.course-list li {
+			break-inside: avoid;      /* keep long names from splitting across columns */
+			margin-bottom: 0.35rem;
+		}
+		@media (min-width: 576px) {
+			.course-list { column-count: 3; }   /* tablets and up */
+		}
 	</style>
 
 
@@ -831,11 +843,20 @@
 						<p class="mt-4">GPA: 3.74/4.0</p>
 
 						<h3 class="h6 mt-4">Courses taken:</h3>
-						<ul class="list-unstyled mb-0">
-							<li> Core concept &amp; design documents</li>
-							<li> Character and environment art</li>
-							<li> Combat AI prototype (Hero Shooter Maker)</li>
-							<li> [Next milestone, e.g. "Rune system prototype"]</li>
+						<ul class="list-unstyled mb-0 course-list">
+							<li> Game Development</li>
+							<li> Project Management</li>
+							<li> Computer Simulation</li>
+							<li> Artificial Intelligence</li>
+							<li> 3D Graphics</li>
+							<li> Operating Systems</li>
+							<li> Data Structures & Algorithms I & II</li>
+							<li> Software Analysis & Design</li>
+							<li> Software Engineering</li>
+							<li> Hardware & Computer Organization</li>
+							<li> Data visualization</li>
+							<li> Interaction Design</li>
+						
 						</ul>
 					</div>
 				<!--</div>-->
