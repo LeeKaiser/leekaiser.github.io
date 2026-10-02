@@ -122,15 +122,22 @@
 
 		/* course list */
 		.course-list {
-			column-count: 2;        
+			column-count: 2;
 			column-gap: 2rem;
 		}
+
 		.course-list li {
-			break-inside: avoid;      /* keep long names from splitting across columns */
+			break-inside: avoid;
+			/* keep long names from splitting across columns */
 			margin-bottom: 0.35rem;
 		}
+
 		@media (min-width: 576px) {
-			.course-list { column-count: 3; }   /* tablets and up */
+			.course-list {
+				column-count: 3;
+			}
+
+			/* tablets and up */
 		}
 	</style>
 
@@ -221,10 +228,8 @@
 								<br>
 								<p><a href="https://www.linkedin.com/in/kaiser-lee/"
 										class="btn btn-primary py-3 px-4">Linkedin</a>
-									<a href="https://github.com/LeeKaiser"
-										class="btn btn-primary py-3 px-4">Github</a>
-										<a href="https://cannonsword.itch.io/"
-										class="btn btn-primary py-3 px-4">Itch.io</a>
+									<a href="https://github.com/LeeKaiser" class="btn btn-primary py-3 px-4">Github</a>
+									<a href="https://cannonsword.itch.io/" class="btn btn-primary py-3 px-4">Itch.io</a>
 								</p>
 							</div>
 						</div>
@@ -238,40 +243,42 @@
 	<!--ABOUT SECTION-->
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
-				<div class="row d-flex align-items-stretch">
-					<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="images/profile_image_2.jpg" class="img-fluid rounded b-shadow-a"
-												alt="">
-										</div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-										<div class="about-info">
-											<p><span class="title-s">Name: </span> <span>Kaiser Lee</span></p>
-											<p><span class="title-s">Recent Role: </span> <span>Software Engineer Intern</span></p>
-											<p><span class="title-s">Major: </span> <span> Computer Science & Software Engineering</span></p>
-											<p><span class="title-s">Location: </span> <span>Seattle, WA</span></p>
-										</div>
+			<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay">
+							<div class="row">
+								<div class="col-sm-6 col-md-5">
+									<div class="about-img">
+										<img src="images/profile_image_2.jpg" class="img-fluid rounded b-shadow-a"
+											alt="">
 									</div>
 								</div>
+								<!-- Details next to profile image -->
+								<div class="col-sm-6 col-md-7">
+									<div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Kaiser Lee</span></p>
+										<p><span class="title-s">Recent Role: </span> <span>Software Engineer
+												Intern</span></p>
+										<p><span class="title-s">Major: </span> <span> Computer Science & Software
+												Engineering</span></p>
+										<p><span class="title-s">Location: </span> <span>Seattle, WA</span></p>
+									</div>
+								</div>
+							</div>
 
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Software Engineering, Game
-											development, Agile SDLC, Web development, Digital Art</span></li>
-									<li class="d-flex"><span>Education:</span> <span>University of Washington - Bothell,
-											Bachelor of Science</span></li>
-									<li class="d-flex"><span>Certifications:</span> <span>Azure AI Fundamentals (Issued
-											by Microsoft)</span></li>
-									<li class="d-flex"><span>Languages:</span> <span>English, Korean</span></li>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>Software Engineering, Game
+										development, Agile SDLC, Web development, Digital Art</span></li>
+								<li class="d-flex"><span>Education:</span> <span>University of Washington - Bothell,
+										Bachelor of Science</span></li>
+								<li class="d-flex"><span>Certifications:</span> <span>Azure AI Fundamentals (Issued
+										by Microsoft)</span></li>
+								<li class="d-flex"><span>Languages:</span> <span>English, Korean</span></li>
 
-								</ul>
-								<!--
+							</ul>
+							<!--
 								<div class="skill-mf">
 									<br>
 									<p class="title-s">Programming Languages and Tools</p>
@@ -320,46 +327,46 @@
 
 								</div>
 							-->
-							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+
+							<!--<h1 class="big">About</h1>-->
+							<h2 class="mb-4">About Me</h2>
+
+							<p>I'm a Computer Science &amp; Software Engineering graduate from the University of
+								Washington Bothell, focused on gameplay and AI systems programming. I like building
+								systems that are fast, modular, and easy for designers to work with.</p>
+
+							<p>For my capstone, <strong>Hero Shooter Maker</strong>, I built an AI agent system in
+								Unity where characters fight without player input. It uses a decision-tree AI with
+								separate movement, aim, and input behaviors. When stress testing with a crowd of 128
+								agents, I profiled the game and moved object detection onto worker threads with the
+								Unity Job System, which took it from 2.9 to 46.7 fps.</p>
+
+							<p>Before that, I was a Software Engineer Intern at Costco, where I worked on the cake
+								ordering feature in the Costco iOS app (Swift) with a 30-person Agile team. I
+								delivered 10+ user stories covering analytics tracking and screen reader
+								accessibility, and I did code reviews for my teammates.</p>
+
+							<p>I also make art. With a minor in Visual &amp; Media Arts, I've created all the art
+								for several of my game jam and class projects, including multiplayer card game
+								<strong>Fifty / Fifty</strong> and Global Game Jam puzzle game <strong>Bitmask
+									Carnival</strong>. I am equipped to work across both the technical and creative
+								sides of a team.
+							</p>
+
+							<p>I'm based in Seattle, open to relocation, and looking for roles in gameplay
+								programming or software engineering.</p>
+
 						</div>
 					</div>
 
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-
-								<!--<h1 class="big">About</h1>-->
-								<h2 class="mb-4">About Me</h2>
-
-								<p>I'm a Computer Science &amp; Software Engineering graduate from the University of
-									Washington Bothell, focused on gameplay and AI systems programming. I like building
-									systems that are fast, modular, and easy for designers to work with.</p>
-
-								<p>For my capstone, <strong>Hero Shooter Maker</strong>, I built an AI agent system in
-									Unity where characters fight without player input. It uses a decision-tree AI with
-									separate movement, aim, and input behaviors. When stress testing with a crowd of 128
-									agents, I profiled the game and moved object detection onto worker threads with the
-									Unity Job System, which took it from 2.9 to 46.7 fps.</p>
-
-								<p>Before that, I was a Software Engineer Intern at Costco, where I worked on the cake
-									ordering feature in the Costco iOS app (Swift) with a 30-person Agile team. I
-									delivered 10+ user stories covering analytics tracking and screen reader
-									accessibility, and I did code reviews for my teammates.</p>
-
-								<p>I also make art. With a minor in Visual &amp; Media Arts, I've created all the art
-									for several of my game jam and class projects, including multiplayer card game
-									<strong>Fifty / Fifty</strong> and Global Game Jam puzzle game <strong>Bitmask
-										Carnival</strong>. I am equipped to work across both the technical and creative
-									sides of a team.
-								</p>
-
-								<p>I'm based in Seattle, open to relocation, and looking for roles in gameplay
-									programming or software engineering.</p>
-
-							</div>
-						</div>
-
-						<!--
+					<!--
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
 								<p class="mb-4">
@@ -369,9 +376,9 @@
 							</div>
 						</div>
 						-->
-					</div>
 				</div>
-			
+			</div>
+
 		</div>
 	</section>
 
@@ -384,13 +391,14 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<!--<h1 class="big big-2">Projects</h1>-->
 					<h2 class="mb-4">Projects</h2>
-					<p style="color : #ffffff"> Games, simulations, and websites I created through out my journey, <br> including class final projects, 48 hour jam, and capstone.</p>
+					<p style="color : #ffffff"> Games, simulations, and websites I created through out my journey, <br>
+						including class final projects, 48 hour jam, and capstone.</p>
 					<div class="underline"></div>
 				</div>
 			</div>
 			<hr>
 			<!-- HSM -->
-			<div class="row mb-5" id = "hero-shooter-maker">
+			<div class="row mb-5" id="hero-shooter-maker">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://github.com/LeeKaiser/Hero_Shooter_Maker" class="block-20 zoom-effect rounded"
@@ -412,23 +420,310 @@
 							Abilities, Teams, etc.
 						</p>
 						<details>
-							<summary> Learn More:</summary>
+							<summary> <span class="dev-toggle btn btn-outline-light"> Learn More: </span></summary>
 							<div class="embed-responsive embed-responsive-16by9 rounded">
 								<iframe class="embed-responsive-item"
 									src="https://www.youtube-nocookie.com/embed/SJJDfqbu44U?rel=0"
-									title="Hero Shooter Maker gameplay demo"
-									loading="lazy"
+									title="Hero Shooter Maker gameplay demo" loading="lazy"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									allowfullscreen></iframe>
 							</div>
 							<p> This video shows the gameplay of the hero shooter maker demo. </p>
+
+							<h4>Major Features</h4>
+							<ul class="feature-list">
+								<li><strong>Character system:</strong> manages interaction between characters.</li>
+								<li><strong>Ability system:</strong> flexible, event-activated ability system that can
+									be added to
+									characters, applicable for making a wide variety of abilities from hero shooters.
+								</li>
+								<li><strong>Status effect system:</strong> flexible status effect system with duration
+									controls.</li>
+								<li><strong>Character AI:</strong> makes the character operate without player input, to
+									simulate
+									matches or to use for minion-type characters.</li>
+								<li><strong>Match systems:</strong> scripts to support teams and game mode objectives.
+								</li>
+								<li><strong>Projectiles:</strong> consistent and flexible projectile system that can be
+									used to make a
+									wide variety of attacks.</li>
+							</ul>
+
+
+							<!-- ========== DESIGN DECISIONS (collapsed dropdown) ========== -->
+							<details class="dev-details">
+								<summary>
+									<span class="dev-toggle btn btn-outline-light">Design Decisions & Implementation Process</span>
+								</summary>
+
+								<h4>Input</h4>
+								<p>
+									The input is decoupled from the character. This allows both the agent and the player
+									to control the
+									character without disparity in what they are able to do. The input from a player
+									simply invokes an
+									event, and any ability whose activation method is subscribed to that event is then
+									called. The agent
+									can also invoke the same event. I decided to implement it this way because in my
+									favorite game,
+									Brawl Stars, there are occasional instances of very long lasting bugs where the bots
+									did not use
+									their abilities correctly, and I did not want to make the same mistake. The easiest
+									example is a bot
+									playing as Gigi, where the bot is not able to attack as Gigi and is effectively a
+									sitting duck.
+									(I speculate that Gigi suffers from this bug because her attack has a unique
+									property where the
+									attack rate increases as her remaining ammo decreases, but the true reason is not
+									confirmed by
+									anyone.)
+								</p>
+								<p>
+									The input is represented by a scriptable object, which contains information about
+									the combination of
+									keys the user pressed, and three types of key presses: press, hold, and release, as
+									well as priority
+									in case one type of input needs to override another.
+								</p>
+
+								<h4>Event Activated Abilities</h4>
+								<p>
+									The systems in Hero Shooter Maker are designed with the intention that abilities
+									activate from
+									events. It is designed this way because it makes it easy to add on Active abilities
+									that activate
+									from input associated events, as well as passive abilities that activate from
+									in-game events like
+									the player taking damage or being airborne.
+								</p>
+
+								<h4>Actions Made from 3 Different “Determine” Classes</h4>
+								<p>
+									The agent’s actions use a strategy pattern, building their behavior through 3
+									different “Determine”
+									classes. The first determines where they decide to move. The second determines where
+									(or who) they
+									decide to aim at, and the third determines what ability to use. I realized these
+									three strategies
+									were enough to create an agent behavior for a character in a hero shooter.
+								</p>
+								<p>
+									This design was inspired by Brawl Stars’s development history. Brawl Stars currently
+									has the player
+									control their character through dragging a blue joystick. But when Brawl Stars was
+									in early beta,
+									they used a tap to move system (like League of Legends and other MOBA games). The
+									visual indicator
+									showed a large white circle at the character’s destination. Interestingly, that
+									circle is still
+									present in the game to this day, which appears on the character’s movement direction
+									when dragging
+									the blue joystick. This gave me the idea that the pathfinding algorithm could be
+									converted to input
+									that would trace that path at a given moment. I created a movement script that makes
+									the agent input
+									the correct movement keys to reach their destination, a surprisingly difficult task
+									when trying to
+									make them successful at platforming in a 3D environment as well.
+								</p>
+								<p>
+									I wanted the agent to be able to reach any location that a normal player would be
+									able to reach. So
+									I invested time into perfecting its movement input to correctly perform platforming.
+									When an agent
+									reaches an “off mesh link” that is positioned at a ledge or right before a platform,
+									it assesses if
+									the movement to the other side will require a jump using the function:
+								</p>
+								<p class="equation">
+									<em>y</em> &gt; ½ · <em>g</em> · (<em>x</em> / <em>s</em>)<sup>2</sup>
+								</p>
+								<p>
+									where <em>y</em> is the vertical distance, <em>g</em> is gravity, <em>x</em> is the
+									horizontal
+									distance, and <em>s</em> is the agent’s speed. The agent’s movement input actively
+									moves towards the
+									landing location, ensuring that it lands on the platform at the intended location
+									instead of missing
+									it and flying off somewhere else.
+								</p>
+								<!-- Optional: GIF of an agent platforming to its destination -->
+								<p>
+									The aiming system was similarly inspired by Brawl Stars. When Brawl Stars changed
+									their movement
+									system, they also added a feature where attack and other abilities can now be “Auto
+									aimed” by tapping
+									on the joystick instead of dragging it across the screen. The Auto Aim simply
+									targets the nearest
+									enemy. I thought that if I had this simple targeting algorithm, and also had other
+									targeting options
+									like aiming at the lowest hp remaining or farthest target, it could allow the agent
+									to target
+									strategically based on the situation.
+								</p>
+
+								<h4>Decision Tree Logic</h4>
+								<p>
+									The agents decide what they should do using a decision tree. I was struggling with
+									how I should
+									create the decision making logic. I wanted something that I could build within a few
+									weeks to scope
+									for my Capstone timeline, a design that was easy to work with for designers, and a
+									logic system that
+									could take multiple factors into account, using the object detection system. The
+									expert that I was
+									consulting taught me about decision trees. When thinking about what they taught me,
+									I realized that
+									the structure of decision trees closely matches binary trees. I began with a binary
+									tree, then
+									diverged from that original design by making improvements such as allowing a node to
+									have multiple
+									parents to make it so multiple conditions can lead to the same action to avoid the
+									need to create
+									duplicate actions. Using a custom editor for creating and editing the decision tree,
+									it is very easy
+									to create a custom logic for how the agent should behave.
+								</p>
+								<!-- Optional: screenshot of the custom decision tree editor
+		<img src="images/hero-shooter-maker/decision-tree-editor.png" class="img-fluid rounded mb-3"
+			alt="Custom Unity editor window showing a decision tree for an agent" loading="lazy">
+		-->
+
+								<h4>Object Detection Optimizations</h4>
+								<p>
+									I started with an object detection logic I learned from a tutorial in high school.
+									Using
+									OverlapSphere to detect all objects within a radius, and filter out objects that
+									were not in its
+									field of view if necessary. I decided to optimize it from the start by having the
+									object detection
+									method be called every set interval rather than every frame, so that it is not
+									running for the
+									majority of the runtime. This logic functioned well for the intended use case of 5
+									to 10 agents in
+									average situations and maximum of about 30 concurrent agents, but my friend from the
+									Capstone class
+									recommended I stress test it by having many concurrent agents. Unity slowed down to
+									a crawl and
+									crashed when I put hundreds of concurrent agents in my test map. So I decided to
+									make a scene
+									dedicated to testing agent performance, with large groups of agents, each doubling
+									in numbers, that I
+									can easily enable and disable. I then checked the Unity Profiler, which showed the
+									processes that
+									were running with each frame. I noticed that there were many processes that were
+									each used by an
+									agent, which activated every set interval.
+								</p>
+								<p>
+									I realized that when agents were near each other, the object detection logic was
+									O(n²), with
+									<em>n</em> being the number of concurrent agents in the same area. Each new agent
+									needed to detect
+									all existing agents, and all existing agents also needed to detect the new one, so
+									the computational
+									load grew quadratically. Since each agent’s detection didn’t depend on any other
+									agent’s results,
+									the work could run in parallel. I looked into the Unity Jobs system and moved object
+									detection onto
+									worker threads and batched the physics queries. This increased the performance from
+									<span class="stat">~2.9 fps to ~46.7 fps with 128 concurrent agents</span> (Apple M4
+									Pro), a
+									<span class="stat">~16x improvement</span>.
+								</p>
+								<!-- Optional: before/after Unity Profiler screenshot -->
+								<p>
+									I then had a thought. Hero shooters usually have a PvE mode, where there can be many
+									agents at once,
+									an iconic example being Team Fortress 2’s Mann vs Machine, and there are even games
+									that are
+									dedicated to hero based character systems with PvE gameplay like Deep Rock Galactic.
+									The agents in
+									those games do not need to collect as much information as the agents replacing a
+									player, so I could
+									implement an alternative detection system for cases with hundreds of simpler agents.
+									I implemented an
+									alternative detection system where, instead of the agent “seeing” relevant objects,
+									the relevant
+									objects (like the player or key locations) “revealed” themselves by adding
+									themselves to the agent’s
+									detection list. This flips detection from the agent searching for objects to a small
+									number of
+									objects announcing themselves to the agents. Because only a few objects reveal
+									themselves, the cost
+									scales linearly with the number of agents, at the cost of agents not being able to
+									detect anything
+									that isn’t revealing itself. I was able to run
+									<span class="stat">512 concurrent agents at ~30 fps</span> (Apple M4 Pro). The
+									method for revealing
+									self to other agents also uses multithreading.
+								</p>
+
+								<h4>Projectile System</h4>
+								<p>
+									I created a custom projectile system, which is modular with many useful components.
+									One of the most
+									useful features of this projectile system is that the projectiles can be grouped
+									together to create
+									more complex attacks. Each projectile has a “ProjectileInfo” component, which stores
+									key information
+									like the objects the projectiles collided with on a given fixed update. If the
+									projectile is part of
+									a group, this info is also sent to the group’s ProjectileInfo. Other components of
+									the projectile
+									source collision information from the ProjectileInfo to then apply their function
+									such as dealing
+									damage or applying a status effect.
+								</p>
+								<p>
+									I used a SphereCast to find all objects between where the projectile is and where
+									the projectile
+									will be in the next Fixed Update. This allows the projectile to collide with objects
+									much more
+									consistently than simply detecting collision with a collider.
+								</p>
+							</details>
+
+
+							<!-- ========== FUTURE WORK (always visible) ========== -->
+							<h4>Future Work</h4>
+							<p>
+								The major features I wanted to add are complete, and it can be used as a package by
+								downloading it from
+								my <a href="https://github.com/LeeKaiser/Hero_Shooter_Maker" target="_blank"
+									rel="noopener">GitHub</a>.
+								But there are still a few tasks I want to work on to improve the project.
+							</p>
+							<ul class="feature-list">
+								<li><strong>Bug fixes, additional testing, and polish:</strong> I’m fixing a few
+									remaining bugs to
+									ensure the project functions as intended. I’m also looking into adding warnings when
+									the developers
+									do not use the features correctly (such as forgetting the character’s stats object)
+									to help them
+									avoid bugs.</li>
+								<li><strong>Documentation:</strong> I’m writing more comprehensive documentation so
+									other developers can
+									pick up the project easily.</li>
+								<li><strong>Projectile system expansion:</strong> I want to create unique projectile
+									travel patterns
+									such as homing and orbiting projectiles, a “hitscan” attack that only uses
+									SphereCast once to
+									instantly hit a target, and implement damage falloff on the ApplyDamage component.
+								</li>
+								<li><strong>Release on the Unity Asset Store:</strong> Once the documentation and bug
+									fixes are
+									complete, I want to release this project on the Unity Asset Store, to reach other
+									developers who
+									could benefit from this project.</li>
+							</ul>
 						</details>
 					</div>
 				</div>
 			</div>
 
 			<!-- fifty fifty -->
-			<div class="row mb-5" id = "fifty-fifty">
+			<div class="row mb-5" id="fifty-fifty">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://cannonsword.itch.io/fiftyfifty" class="block-20 zoom-effect rounded"
@@ -457,7 +752,7 @@
 			</div>
 
 			<!-- bitmask -->
-			<div class="row mb-5" id = "bitmask-carnival">
+			<div class="row mb-5" id="bitmask-carnival">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://husky-game-dev.itch.io/bitmask-carnival" class="block-20 zoom-effect rounded"
@@ -486,12 +781,12 @@
 			</div>
 
 			<!-- hiver drive -->
-			<div class="row mb-5" id = "hiver-drive">
+			<div class="row mb-5" id="hiver-drive">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://cannonsword.itch.io/hiver-drive" class="block-20 zoom-effect rounded"
-							style="background-image: url('images/project_10.png');">
-						</a>
+						style="background-image: url('images/project_10.png');">
+					</a>
 				</div>
 				<div class="col-md-8  ftco-animate">
 					<div class="text mt-3 mt-md-0">
@@ -515,12 +810,12 @@
 			</div>
 
 			<!-- Sci fi Golf -->
-			<div class="row mb-5" id = "Sci-fi-golf">
+			<div class="row mb-5" id="Sci-fi-golf">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://play.unity.com/en/games/beda7471-d149-4d06-a852-05eac9b3aca0/webgl-builds"
-							class="block-20 zoom-effect rounded" style="background-image: url('images/Project_8.png');">
-						</a>
+						class="block-20 zoom-effect rounded" style="background-image: url('images/Project_8.png');">
+					</a>
 				</div>
 				<div class="col-md-8  ftco-animate">
 					<div class="text mt-3 mt-md-0">
@@ -544,7 +839,7 @@
 			</div>
 
 			<!-- acetaminophen -->
-			<div class="row mb-5" id = "acetaminophen">
+			<div class="row mb-5" id="acetaminophen">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://github.com/LeeKaiser/AcetaminophenProject" class="block-20 zoom-effect rounded"
@@ -573,12 +868,12 @@
 			</div>
 
 			<!-- show me your work -->
-			<div class="row mb-5" id = "show-me-your-work">
+			<div class="row mb-5" id="show-me-your-work">
 
 				<div class="col-md-4 ftco-animate">
 					<a href="https://www.showmeyourwork.com/" class="block-20 zoom-effect rounded"
-							style="background-image: url('images/project_1.png');">
-						</a>
+						style="background-image: url('images/project_1.png');">
+					</a>
 				</div>
 				<div class="col-md-8  ftco-animate">
 					<div class="text mt-3 mt-md-0">
@@ -748,7 +1043,8 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<!--<h1 class="big big-2">Resume</h1>-->
 					<h2 class="mb-4">Resume</h2>
-					<p style="color : #ffffff">CS & Software Engineering graduate with experience shipping iOS features at Costco and building websites in Wordpress. Skilled in C#, C++, Python, and Swift.</p>
+					<p style="color : #ffffff">CS & Software Engineering graduate with experience shipping iOS features
+						at Costco and building websites in Wordpress. Skilled in C#, C++, Python, and Swift.</p>
 					<div class="underline"></div>
 				</div>
 			</div>
@@ -862,30 +1158,30 @@
 
 			<div class="row">
 				<!--<div class="col-md-6">-->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2026</span>
-						<h2>BS in Computer Science and Software Engineering</h2>
-						<p>Minors: Data Science, Visual and Media Arts</p>
-						<span class="position">University of Washington - Bothell</span>
-						<p class="mt-4">GPA: 3.74/4.0</p>
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2022-2026</span>
+					<h2>BS in Computer Science and Software Engineering</h2>
+					<p>Minors: Data Science, Visual and Media Arts</p>
+					<span class="position">University of Washington - Bothell</span>
+					<p class="mt-4">GPA: 3.74/4.0</p>
 
-						<h3 class="h6 mt-4">Courses taken:</h3>
-						<ul class="list-unstyled mb-0 course-list">
-							<li> Game Development</li>
-							<li> Project Management</li>
-							<li> Computer Simulation</li>
-							<li> Artificial Intelligence</li>
-							<li> 3D Graphics</li>
-							<li> Operating Systems</li>
-							<li> Data Structures & Algorithms I & II</li>
-							<li> Software Analysis & Design</li>
-							<li> Software Engineering</li>
-							<li> Hardware & Computer Organization</li>
-							<li> Data visualization</li>
-							<li> Interaction Design</li>
-						
-						</ul>
-					</div>
+					<h3 class="h6 mt-4">Courses taken:</h3>
+					<ul class="list-unstyled mb-0 course-list">
+						<li> Game Development</li>
+						<li> Project Management</li>
+						<li> Computer Simulation</li>
+						<li> Artificial Intelligence</li>
+						<li> 3D Graphics</li>
+						<li> Operating Systems</li>
+						<li> Data Structures & Algorithms I & II</li>
+						<li> Software Analysis & Design</li>
+						<li> Software Engineering</li>
+						<li> Hardware & Computer Organization</li>
+						<li> Data visualization</li>
+						<li> Interaction Design</li>
+
+					</ul>
+				</div>
 				<!--</div>-->
 				<!--
 				<div class="col-md-6">
@@ -963,8 +1259,7 @@
 							<span class="icon-globe"></span>
 						</div>
 						<h3 class="mb-4">Resume</h3>
-						<p><a
-								href="Other_Files/Kaiser Lee Resume general 9_24_26.docx.pdf">My
+						<p><a href="Other_Files/Kaiser Lee Resume general 9_24_26.docx.pdf">My
 								Resume</a></p>
 					</div>
 				</div>
